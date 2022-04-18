@@ -8,9 +8,8 @@ def password_check(passwd):
     val = True
     
     if not any(char.isupper() for char in passwd) or not any(char.islower() for char in passwd):
-        print('- Password must contain both lowercase and uppercase letters')
         val = False     
-             
+        print('- Password must contain both lowercase and uppercase letters')
     if not any(char.isdigit() for char in passwd):
         print('- Password must contain digits')
         val = False
@@ -20,11 +19,12 @@ def password_check(passwd):
         val = False
     
     if len(passwd) <= 14:
-        print('- Password should be at least 14 characters long')
         val = False
-    
+        print('- Password should be at least 14 characters long')
+        
     if val:
-        return f'Strong password'
+        print('Strong password')
+        return 'Strong password'
   
 # Driver Code        
 if __name__ == '__main__':
