@@ -24,7 +24,7 @@ def password_check(passwd):
         val = False
     
     if val:
-        print('Strong password')
+        return f'Strong password'
   
 # Driver Code        
 if __name__ == '__main__':
