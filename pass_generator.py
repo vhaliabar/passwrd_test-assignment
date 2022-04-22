@@ -27,3 +27,6 @@ def generate_random_password():
 ## invoking the function      
 if __name__ == '__main__':
     generate_random_password()
+    
+    
+## new line
